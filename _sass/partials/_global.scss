@@ -1,0 +1,103 @@
+
+footer, header, nav, section {
+  display: block;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body, html {
+  margin: 0;
+  font-family: $fixed-font-family, $base-font-family;
+  font-size: $base-font-size;
+  font-weight: $regular;
+  height: 100%;
+  background: $base-background-color;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, .004);
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+section {
+  overflow: hidden;
+  min-height: $min-section-height;
+  padding-top: $section-padding-top;
+  padding-bottom: $section-padding-bottom;
+  text-align: center;
+  @media (max-width: 767px) {
+    padding-top: $small-section-padding-top;
+    padding-bottom: $small-section-padding-bottom;
+  }
+  h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    @media (max-width: 767px) {
+      padding-bottom: 30px;
+    }
+  }
+}
+p {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: $base-line-height;
+}
+i {
+  font-style: normal;
+}
+b, strong {
+  font-weight: $bold;
+}
+a {
+  color: $link-color;
+
+  &:hover, &:active, &:focus {
+    color: lighten($link-color, $link-lighten-amount);
+    text-decoration: none;
+  }
+}
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 15px;
+  font-weight: $light;
+  display: block;
+}
+h1 {
+  font-size: $h1-font-size;
+  @media (max-width: 767px) {
+    font-size: $h1-font-size * 60 / 100;
+  }
+}
+h2 {
+  font-size: $h2-font-size;
+  @media (max-width: 767px) {
+    font-size: $h2-font-size * 60 / 100;
+  }
+}
+h3 {
+  font-size: $h3-font-size;
+  @media (max-width: 767px) {
+    font-size: $h3-font-size * 70 / 100;
+  }
+}
+h4 {
+  font-size: $h4-font-size;
+  @media (max-width: 767px) {
+    font-size: $h4-font-size * 70 / 100;
+  }
+}
+h5 {
+  font-size: $h5-font-size;
+  @media (max-width: 767px) {
+    font-size: $h5-font-size * 80 / 100;
+  }
+}
+h6 {
+  font-size: $h6-font-size;
+  @media (max-width: 767px) {
+    font-size: $h6-font-size * 80 / 100;
+  }
+}
